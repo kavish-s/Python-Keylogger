@@ -1,49 +1,83 @@
-# Keylogger Script
+# Python Keylogger
 
-## Overview
+A simple Python-based keylogger that records keystrokes and saves them to a file (`keylog.txt`).
 
-This script is a simple keylogger that records keystrokes and saves them to a log file (`keylog.txt`). It captures individual key presses and key combinations, along with timestamps, for each recorded event.
+---
 
 ## Features
 
-- Logs individual key presses
-- Detects and logs key combinations
-- Saves logs with timestamps
-- Stops logging when the "esc" key is pressed
+- Logs all keystrokes.
+- Detects key combinations (e.g., `Ctrl + C`).
+- Saves logs with timestamps.
+- Runs in the background.
+- Can be converted into an executable (`.exe`).
+
+---
 
 ## Requirements
 
-- Python 3.x
-- `keyboard` module (install using `pip install keyboard`)
+Before running the script, install the required dependencies:
 
-## Installation
+```sh
+pip install -r requirements.txt
+```
 
-1. Ensure Python is installed on your system.
-2. Install the required module:
-   ```sh
-   pip install keyboard
-   ```
-3. Download or copy the script to your desired directory.
+### `requirements.txt`
+
+```
+keyboard
+```
+
+---
 
 ## Usage
 
-1. Run the script using:
+### Running as a Python Script
+
+1. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+2. Run the script:
    ```sh
    python keylogger.py
    ```
-2. The script will start logging keystrokes and save them in `keylog.txt`.
-3. Press the "esc" key to stop the keylogger.
+3. The script will log keystrokes in `keylog.txt`.
+4. Press `Esc` to stop the script.
 
-## File Structure
+---
 
-- `keylogger.py`: The main script that logs keystrokes.
-- `keylog.txt`: The file where all recorded keystrokes are stored.
+## Converting Python Script to Executable (Windows)
+
+To run the keylogger without opening a terminal, convert it into an `.exe` file.
+
+### Using PyInstaller
+
+1. Install PyInstaller:
+   ```sh
+   pip install pyinstaller
+   ```
+2. Convert the script to an executable:
+
+   ```sh
+   pyinstaller --onefile keylogger.py
+   ```
+
+   - `--onefile`: Creates a single `.exe` file.
+
+3. The `.exe` file will be in the `dist/` folder.
+4. Run `keylogger.exe`—it will execute in the background.
+
+---
 
 ## Notes
 
-- Running this script requires administrative privileges on some operating systems.
-- Be ethical and responsible when using keyloggers. Unauthorized logging of keystrokes may violate privacy laws.
+- This script is for **educational and ethical use only**. Unauthorized use may violate laws.
+- To stop the keylogger, press `Esc`.
+- The script writes logs to `keylog.txt` in the same directory.
 
-## Disclaimer
+---
 
-This script is for educational purposes only. The author is not responsible for any misuse of this tool.
+## License
+
+This project is for ethical and educational purposes. Use responsibly.
