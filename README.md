@@ -84,6 +84,7 @@ To run the keylogger without opening a terminal, convert it into an `.exe` file.
    ```
    - `--onefile`: Creates a single `.exe` file.
    - `--noconsole`: Runs the script silently in the background.
+   - `--exclude-module server-side`: Ensures that the server-side module (or folder) is not packaged into the executable.
 3. The `.exe` file will be in the `dist/` folder.
 4. Run `keylogger.exe`—it will execute in the background.
 
@@ -93,7 +94,6 @@ To run the keylogger without opening a terminal, convert it into an `.exe` file.
 
 - **For educational and ethical use only.** Unauthorized use may violate laws.
 - To stop the keylogger, press `Esc`.
-- The script writes logs to `keylog.txt` in the same directory.
 - The server must be running before stopping the keylogger for successful file transfer.
 - Ensure that the firewall and antivirus settings allow the connection for proper functioning.
 
