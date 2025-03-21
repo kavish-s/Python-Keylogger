@@ -1,7 +1,8 @@
 import os
-import keyboard
 import socket
 from time import strftime
+
+import keyboard
 
 log_file = "keylog.txt"
 combination_keys = set()
