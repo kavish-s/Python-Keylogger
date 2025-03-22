@@ -80,7 +80,7 @@ To run the keylogger without opening a terminal, convert it into an `.exe` file.
    ```
 2. Convert the script to an executable:
    ```sh
-      pyinstaller --onefile --noconsole keylogger.py --exclude-module server-side
+   pyinstaller --onefile --noconsole keylogger.py --exclude-module server-side
    ```
    - `--onefile`: Creates a single `.exe` file.
    - `--noconsole`: Runs the script silently in the background.
