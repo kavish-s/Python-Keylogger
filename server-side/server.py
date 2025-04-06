@@ -1,7 +1,6 @@
-# To be run on the system that wants to recieve the keylogs
 import socket
 
-HOST = "0.0.0.0"  # Listen on all network interfaces
+HOST = "0.0.0.0"
 PORT = 5001
 
 
